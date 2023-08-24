@@ -21,3 +21,8 @@ As a pupil, I can:
 - comment on others posts so i can share my opnion.
 - like a post to encourage the post owner to participate more.
 - follow a pupil or a teacher so i can see what they post. 
+
+Target Audience
+- Storytellers : pupils and teachers who enjoy sharing their fun times experience.
+- School members : pupils and teachers who who value being engaged in discussions and interactions.
+- Joy seekers: who actively seek out new places, experiences, and adventures.
