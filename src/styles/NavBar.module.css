@@ -1,3 +1,8 @@
 .NavBar{
 border: solid 1px #ececa3 ;
 }
+
+  
+  .Active i {
+    color: #607c3c;
+  }

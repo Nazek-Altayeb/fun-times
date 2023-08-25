@@ -12,7 +12,7 @@
   
   a {
     color: #555555;
-    transition: color ease-in-out 0.3s;
+    transition: #809c13 ease-in-out 0.3s;
   }
   
   a:hover {
@@ -21,7 +21,7 @@
   
   a:hover i {
     color: #607c3c;
-    transition: color ease-in-out 0.3s;
+    transition: #809c13 ease-in-out 0.3s;
   }
   
   i {
