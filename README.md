@@ -26,10 +26,9 @@ User stories has been divided and done within fixed iterations, each iteration l
 ### **Epic 1 - General functionalities**
 - As a first time website visitor I can see one page website, so i can notice all the capabilities at one time.
 - As a first time website visitor I can see a friendly UI which comes with a design and colors that children like.
-- As a first time website visitor I can  jump between different sections smoothly.
 - As a website user (teacher/pupil) I can view a navbar from all pages, so i can navigate easily between pages, 
 
-### **Epic 2 - General functionalities**
+### **Epic 2 - Main functionalities**
 - As a teacher/pupil I can write picnics suggestions so other pupils and teachers can consider.
 - As a teacher/pupil I can comment on others posts so i can share my opnion. 
 - As a teacher/pupil I can like a post to encourage the post owner to participate more.
