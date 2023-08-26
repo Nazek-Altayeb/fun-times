@@ -65,9 +65,9 @@ I named my project **fun times**.
 Issues have been prioritized according to `MOSCOW`. 
 I have followed the iterative approach, each sprint last for 5 days.
 - **Sprint 1 (Aug 22nd To 26th, 2023)**
-    - [x] [USER STORY: setup environment](https://github.com/Nazek-Altayeb/fun-times/issues/1) (Must do) 
-    - [x] [USER STORY: add project Goal and User-Stories to the readme](https://github.com/Nazek-Altayeb/fun-times/issues/2) (Must do) 
-    - [x] [USER STORY: add navigation bar](https://github.com/Nazek-Altayeb/fun-times/issues/3) (Must do) 
+    - [x] [User story: Setup environment](https://github.com/Nazek-Altayeb/fun-times/issues/1) ``` - Must do ```
+    - [x] [User story: Add project Goal and User-Stories to the readme](https://github.com/Nazek-Altayeb/fun-times/issues/2) ``` - Must do ```
+    - [x] [User story: Add navigation bar](https://github.com/Nazek-Altayeb/fun-times/issues/3) ``` - Must do ```
 
 # Testing 
 To Do ......
