@@ -40,18 +40,6 @@ User stories has been divided and done within fixed iterations, each iteration l
 - School pupils who  value being engaged in discussions and interactions.
 - Joy seekers who actively seek out new places, experiences, and adventures.
 
-# Wireframes
-I've used [Balsamiq](https://balsamiq.com/wireframes) to design the website wireframes, 
-I've created wireframes for different screen sizes (desktop, tablet, mobile).
-
-# System Design
-Here stays the ERD Diagram ......... !
-
-# Agile development process
-The development process went smoothly with the use of the Github features (Project and Issues).
-### **Project**
-### **Issues**
-
 # Features
 ### **Existing features**
 - **Main page**
@@ -65,6 +53,17 @@ The development process went smoothly with the use of the Github features (Proje
 ### **Future Features**
 - **Website reviews**
 
+# Wireframes
+I've used [Balsamiq](https://balsamiq.com/wireframes) to design the website wireframes, 
+I've created wireframes for different screen sizes (desktop, tablet, mobile).
+
+# System Design
+Here stays the ERD Diagram ......... !
+
+# Agile development process
+The development process went smoothly with the use of the Github features (Project and Issues).
+### **Project**
+### **Issues**
 
 # Testing 
 To Do ......
