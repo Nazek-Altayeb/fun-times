@@ -23,13 +23,13 @@ I have chosen fonts that are readable and not formal at the same time.
 # User stories
 User stories has been divided and done within fixed iterations, each iteration last for 5 days.
 
-### **Iteration 1 - General functionalities**
+### **Epic 1 - General functionalities**
 - As a first time website visitor I can see one page website, so i can notice all the capabilities at one time.
 - As a first time website visitor I can see a friendly UI which comes with a design and colors that children like.
 - As a first time website visitor I can  jump between different sections smoothly.
 - As a website user (teacher/pupil) I can view a navbar from all pages, so i can navigate easily between pages, 
 
-### **Iteration 2 - General functionalities**
+### **Epic 2 - General functionalities**
 - As a teacher/pupil I can write picnics suggestions so other pupils and teachers can consider.
 - As a teacher/pupil I can comment on others posts so i can share my opnion. 
 - As a teacher/pupil I can like a post to encourage the post owner to participate more.
@@ -62,8 +62,13 @@ Here stays the ERD Diagram ......... !
 
 # Agile development process
 The development process went smoothly with the use of the Github features (Project and Issues).
-### **Project**
-### **Issues**
+I named my project **fun times**.
+Issues have been prioritized according to `MOSCOW`. 
+I have followed the iterative approach, each sprint last for 5 days.
+- **Sprint 1 (Aug 22nd To 26th, 2023)**
+    - [x] [USER STORY: setup environment](https://github.com/Nazek-Altayeb/fun-times/issues/1) (Must do) 
+    - [x] [USER STORY: add project Goal and User-Stories to the readme](https://github.com/Nazek-Altayeb/fun-times/issues/2) (Must do) 
+    - [x] [USER STORY: add navigation bar](https://github.com/Nazek-Altayeb/fun-times/issues/3) (Must do) 
 
 # Testing 
 To Do ......
@@ -93,5 +98,8 @@ Here stays the  (Fork, Clone, Heruko Deployment) paragraphs ...........
 
 # Credits
 ### **Content**
+To Do ......
 ### **Media**
+To Do ......
 ### **Aknowledgement**
+To Do ......
