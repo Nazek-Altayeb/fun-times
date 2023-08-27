@@ -60,14 +60,14 @@ I've created wireframes for different screen sizes (desktop, tablet, mobile).
 Here stays the ERD Diagram ......... !
 
 # Agile development process
-The development process went smoothly with the use of the Github features (Project and Issues).
-I named my project **fun times**.
-Issues have been prioritized according to `MOSCOW`. 
+The development process went smoothly with the use of the Github roadmap project board.
+I named my project in the Github **fun times**.
+I created and prioritized  the issues according to `MOSCOW`.
 I have followed the iterative approach, each sprint last for 5 days.
 - **Sprint 1 (Aug 22nd To 26th, 2023)**
-    - [x] [User story: Setup environment](https://github.com/Nazek-Altayeb/fun-times/issues/1) <code style="color : red"> Must have</code>
-    - [x] [User story: Add project Goal and User-Stories to the readme](https://github.com/Nazek-Altayeb/fun-times/issues/2) <code style="color : red"> Must have</code>
-    - [x] [User story: Add navigation bar](https://github.com/Nazek-Altayeb/fun-times/issues/3) <code style="color : red"> Must have</code>
+    - [x] [User story: Setup environment](https://github.com/Nazek-Altayeb/fun-times/issues/1) <code style="color:red"> (Must have)</code>
+    - [x] [User story: Add project Goal and User-Stories to the readme](https://github.com/Nazek-Altayeb/fun-times/issues/2) <code style="color:red"> (Must have)</code>
+    - [x] [User story: Add navigation bar](https://github.com/Nazek-Altayeb/fun-times/issues/3) <code style="color:red"> (Must have)</code>
 
 # Testing 
 To Do ......
