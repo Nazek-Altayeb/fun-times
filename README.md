@@ -69,6 +69,11 @@ I have followed the iterative approach, each sprint last for 5 days.
     - [x] [User story: Add project Goal and User-Stories to the readme](https://github.com/Nazek-Altayeb/fun-times/issues/2) <code style="color:red"> (Must have)</code>
     - [x] [User story: Add navigation bar](https://github.com/Nazek-Altayeb/fun-times/issues/3) <code style="color:red"> (Must have)</code>
 
+# Bugs
+### **Fixed bugs**
+- Bug: Route element is not recognized, 
+    - fix: down grade the react-dom to version 5
+
 # Testing 
 To Do ......
 Here stays a link for the mannual testing, and bugs ...!
