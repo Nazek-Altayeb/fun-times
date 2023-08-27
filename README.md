@@ -29,6 +29,7 @@ User stories has been divided and done within fixed iterations, each iteration l
 - As a website user (teacher/pupil) I can view a navbar from all pages, so i can navigate easily between pages, 
 
 ### **Epic 2 - Main functionalities**
+- As a user (teacher/pupil) i can create an account, so i can access all features.
 - As a teacher/pupil I can write picnics suggestions so other pupils and teachers can consider.
 - As a teacher/pupil I can comment on others posts so i can share my opnion. 
 - As a teacher/pupil I can like a post to encourage the post owner to participate more.
