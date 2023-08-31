@@ -30,10 +30,13 @@ User stories has been divided and done within fixed iterations, each iteration l
 
 ### **Epic 2 - Main functionalities**
 - As a user (teacher/pupil) i can create an account, so i can access all features.
-- As a teacher/pupil I can write picnics suggestions so other pupils and teachers can consider.
-- As a teacher/pupil I can comment on others posts so i can share my opnion. 
-- As a teacher/pupil I can like a post to encourage the post owner to participate more.
-- As a teacher/pupil I can follow a pupil or a teacher so i can see their adventures. 
+- As a registered  user, i can login, so i can benefit my access priviliges.
+- As a logged in user, I can logout, so I can secure my account.
+- As a logged in user, I can edit my profile, so I can update my information.
+- As a logged in I can write picnics suggestions so other pupils and teachers can consider.
+- As a logged in I can comment on others posts so i can share my opnion. 
+- As a logged in I can like a post to encourage the post owner to participate more.
+- As a logged in I can follow a pupil or a teacher so i can see their adventures. 
 
 ### **Target Audience**
 - Storytellers  who enjoy sharing their fun times experience.
@@ -67,8 +70,13 @@ I created and prioritized  the issues according to `MOSCOW`.
 I have followed the iterative approach, each sprint last for 5 days.
 - **Sprint 1 (Aug 22nd To 26th, 2023)**
     - [x] [User story: Setup environment](https://github.com/Nazek-Altayeb/fun-times/issues/1) <code style="color:red"> (Must have)</code>
-    - [x] [User story: Add project Goal and User-Stories to the readme](https://github.com/Nazek-Altayeb/fun-times/issues/2) <code style="color:red"> (Must have)</code>
+    - [x] [User story: Add project Goal and User-Stories to the readme](https://github.com/Nazek-Altayeb/fun-times/issues/2) <code style="color:#5319E7"> (Should have)</code>
     - [x] [User story: Add navigation bar](https://github.com/Nazek-Altayeb/fun-times/issues/3) <code style="color:red"> (Must have)</code>
+- **Sprint 2 (Aug 23rd To 31th, 2023)**
+    - [x] [User story: Registration](https://github.com/Nazek-Altayeb/fun-times/issues/4) <code style="color:red"> (must have)</code>
+    - [x] [User story: Login](https://github.com/Nazek-Altayeb/fun-times/issues/5) <code style="color:red"> (must have)</code>
+    - [x] [User story: Logout](https://github.com/Nazek-Altayeb/fun-times/issues/6) <code style="color:red"> (must have)</code>
+    - [x] [User story: Profile management](https://github.com/Nazek-Altayeb/fun-times/issues/7) <code style="color:red"> (must have)</code>
 
 # Bugs
 ### **Fixed bugs**
