@@ -73,10 +73,18 @@ I have followed the iterative approach, each sprint last for 5 days.
     - [x] [User story: Add project Goal and User-Stories to the readme](https://github.com/Nazek-Altayeb/fun-times/issues/2) <code style="color:#5319E7"> (Should have)</code>
     - [x] [User story: Add navigation bar](https://github.com/Nazek-Altayeb/fun-times/issues/3) <code style="color:red"> (Must have)</code>
 - **Sprint 2 (Aug 23rd To 31th, 2023)**
-    - [x] [User story: Registration](https://github.com/Nazek-Altayeb/fun-times/issues/4) <code style="color:red"> (must have)</code>
-    - [x] [User story: Login](https://github.com/Nazek-Altayeb/fun-times/issues/5) <code style="color:red"> (must have)</code>
-    - [x] [User story: Logout](https://github.com/Nazek-Altayeb/fun-times/issues/6) <code style="color:red"> (must have)</code>
-    - [x] [User story: Profile management](https://github.com/Nazek-Altayeb/fun-times/issues/7) <code style="color:red"> (must have)</code>
+    - [x] [User story: Registration](https://github.com/Nazek-Altayeb/fun-times/issues/4), moved to sprint 3<code style="color:red"> (Must have)</code>
+    - [x] [User story: Login](https://github.com/Nazek-Altayeb/fun-times/issues/5), moved to sprint 4 <code style="color:red"> (Must have)</code>
+    - [x] [User story: Logout](https://github.com/Nazek-Altayeb/fun-times/issues/6), moved to sprint 4 <code style="color:red"> (Must have)</code>
+    - [x] [User story: Profile management](https://github.com/Nazek-Altayeb/fun-times/issues/7), moved to sprint 4 <code style="color:red"> (Must have)</code>
+    - [x] [Deploy to Heroku](https://github.com/Nazek-Altayeb/fun-times/issues/9)<code style="color:#5319E7"> (Should have)</code>
+- **Sprint 3 (Sep 1st To 5th, 2023)**
+    - [x] [User story: Registration](https://github.com/Nazek-Altayeb/fun-times/issues/4)<code style="color:red"> (Must have)</code>
+    - [x] Fix issues caused by configuration errors <code style="color:red"> (Must have)</code>
+- **Sprint 4 (Sep 6th To 10th, 2023)**
+    - [x] [User story: Login](https://github.com/Nazek-Altayeb/fun-times/issues/5) <code style="color:red"> (Must have)</code>
+    - [x] [User story: Logout](https://github.com/Nazek-Altayeb/fun-times/issues/6) <code style="color:red"> (Must have)</code>
+    - [x] [User story: Profile management](https://github.com/Nazek-Altayeb/fun-times/issues/7) <code style="color:#5319E7"> (Should have)</code>
 
 # Bugs
 ### **Fixed bugs**
