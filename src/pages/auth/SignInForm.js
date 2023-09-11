@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios"
-
-import React from "react";
+import axios from "axios";
 
 import Form from "react-bootstrap/Form";
 import Alert from "react-bootstrap/Alert";
@@ -17,27 +15,30 @@ import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 
 function SignInForm() {
-    const [signInData, setSignInData] = useState({
-        username: "",
-        password: "",
-      });
-      const { username, password } = signInData;
-    
-      const history = useHistory();
-      const handleSubmit = async (event) => {
-        event.preventDefault();
-        try {
-          await axios.post("/dj-rest-auth/login/", signInData);
-          history.push("/");
-        } catch (err) {
-        }
-      };
-      const handleChange = (event) => {
-        setSignInData({
-          ...signInData,
-          [event.target.name]: event.target.value,
-        });
-      };
+  const [signInData, setSignInData] = useState({
+    username: "",
+    password: "",
+  });
+  const { username, password } = signInData;
+
+  const [errors, setErrors] = useState({});
+
+  const history = useHistory();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      await axios.post("/dj-rest-auth/login/", signInData);
+      history.push("/");
+    } catch (err) {
+      setErrors(err.response?.data);
+    }
+  };
+  const handleChange = (event) => {
+    setSignInData({
+      ...signInData,
+      [event.target.name]: event.target.value,
+    });
+  };
 
   return (
     <Row className={styles.Row}>
@@ -48,19 +49,48 @@ function SignInForm() {
             <Form onSubmit={handleSubmit}>
               <Form.Group controlId="username">
                 <Form.Label className="d-none">username</Form.Label>
-                <Form.Control type="text" placeholder="username" name="username"  className={styles.Input} value={username} onChange={handleChange}/>
+                <Form.Control
+                  type="text"
+                  placeholder="username"
+                  name="username"
+                  className={styles.Input}
+                  value={username}
+                  onChange={handleChange}
+                />
               </Form.Group>
+              {errors.username?.map((message, idx) => (
+                <Alert key={idx} variant="warning">
+                  {message}
+                </Alert>
+              ))}
 
               <Form.Group controlId="password">
                 <Form.Label className="d-none">Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" name="password"  className={styles.Input} value={password} onChange={handleChange}/>
+                <Form.Control
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  className={styles.Input}
+                  value={password}
+                  onChange={handleChange}
+                />
               </Form.Group>
-              <Button 
-                    className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`}
-                    type="submit"
-                >
-                    Sign In
-                </Button>
+              {errors.password?.map((message, idx) => (
+                <Alert key={idx} variant="warning">
+                  {message}
+                </Alert>
+              ))}
+              <Button
+                className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`}
+                type="submit"
+              >
+                Sign In
+              </Button>
+              {errors.non_field_errors?.map((message, idx) => (
+                <Alert key={idx} variant="warning" className="mt-3">
+                  {message}
+                </Alert>
+              ))}
             </Form>
           }
         </Container>
