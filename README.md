@@ -91,6 +91,8 @@ I have followed the iterative approach, each sprint last for 5 days.
 ### **Fixed bugs**
 - Bug: Route element is not recognized, 
     - fix: down grade the react-dom to version 5
+- Bug: Navigation breaks
+    - uninstall React and React-Dom version 18, install version 17 
 
 # Testing 
 To Do ......
