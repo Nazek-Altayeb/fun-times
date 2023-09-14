@@ -108,6 +108,7 @@ I have followed the iterative approach, each sprint last for 5 days.
     - fix: down grade the react-router-dom to version 5
 - Bug: Navigation breaks
     - uninstall React and React-dom version 18, install version 17 
+- Bug: Refresh token is not working properly, means logged in user have to login again after page refresh. 
 
 # Testing 
 To Do ......
