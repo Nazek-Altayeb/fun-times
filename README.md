@@ -38,6 +38,8 @@ User stories has been divided and done within fixed iterations, each iteration l
 - As a logged in I can like a post to encourage the post owner to participate more.
 - As a logged in I can follow a pupil or a teacher so i can see their adventures. 
 
+### **Epic 2 - Customization**
+
 ### **Target Audience**
 - Storytellers  who enjoy sharing their fun times experience.
 - School pupils who  value being engaged in discussions and interactions.
@@ -58,7 +60,19 @@ User stories has been divided and done within fixed iterations, each iteration l
 
 # Wireframes
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design the website wireframes, 
-I've created wireframes for different screen sizes (desktop, tablet, mobile).
+I've created wireframes for different screen sizes (desktop, mobile).
+<details><summary>Home</summary>
+<img src="./src/assets/wireframes/home.png">
+</details>
+<details><summary>About</summary>
+<img src="">
+</details>
+<details><summary>Sign Up / Sign in</summary>
+<img src="">
+</details>
+<details><summary>Profile</summary>
+<img src="">
+</details>
 
 # System Design
 Here stays the ERD Diagram ......... !
@@ -75,17 +89,18 @@ I have followed the iterative approach, each sprint last for 5 days.
 - **Sprint 2 (Aug 23rd To 31th, 2023)**
     - [x] [User story: Registration](https://github.com/Nazek-Altayeb/fun-times/issues/4), moved to sprint 3<code style="color:red">(Must have)</code>
     - [x] [User story: Login](https://github.com/Nazek-Altayeb/fun-times/issues/5), moved to sprint 4 <code style="color:red">(Must have)</code>
-    - [x] [User story: Logout](https://github.com/Nazek-Altayeb/fun-times/issues/6), moved to sprint 4 <code style="color:red">(Must have)</code>
-    - [x] [User story: Profile management](https://github.com/Nazek-Altayeb/fun-times/issues/7), moved to sprint 4 <code style="color:red">(Must have)</code>
+    - [x] [User story: Logout](https://github.com/Nazek-Altayeb/fun-times/issues/6), moved to sprint 5 <code style="color:red">(Must have)</code>
+    - [x] [User story: Profile management](https://github.com/Nazek-Altayeb/fun-times/issues/7), moved to sprint 5 <code style="color:red">(Must have)</code>
     - [x] [Deploy to Heroku](https://github.com/Nazek-Altayeb/fun-times/issues/9)<code style="color:#5319E7">(Should have)</code>
 - **Sprint 3 (Sep 1st To 5th, 2023)**
     - [x] [User story: Registration](https://github.com/Nazek-Altayeb/fun-times/issues/4)<code style="color:red">(Must have)</code>
     - [x] Fix issues caused by configuration errors <code style="color:red">(Must have)</code>
 - **Sprint 4 (Sep 6th To 10th, 2023)**
     - [] [User story: Login](https://github.com/Nazek-Altayeb/fun-times/issues/5) <code style="color:red">(Must have)</code>
+    - [] [Combine the API and the front-end in the same workspace](https://github.com/Nazek-Altayeb/fun-times/issues/8) <code style="color:#5319E7">(Should have)</code>
+- **Sprint 5 (Sep 11th To 15th, 2023)**
     - [] [User story: Logout](https://github.com/Nazek-Altayeb/fun-times/issues/6) <code style="color:red">(Must have)</code>
     - [] [User story: Profile management](https://github.com/Nazek-Altayeb/fun-times/issues/7) <code style="color:#5319E7">(Should have)</code>
-    - [] [Combine the API and the front-end in the same workspace](https://github.com/Nazek-Altayeb/fun-times/issues/8) <code style="color:#5319E7">(Should have)</code>
 
 # Bugs
 ### **Fixed bugs**
@@ -115,6 +130,8 @@ The website has been implemented with the use of a variety of technologies.
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [Django Summernote](https://github.com/summernote/django-summernote) used for the body field for blog posts.
+- [DB Diagram](https://dbdiagram.io/d) used for desiging the ER diagram.
+- [Balsamiq](https://balsamiq.com/) used for designing the website UI.
 
 # Deployment
 To Do ......
