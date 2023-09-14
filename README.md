@@ -38,7 +38,7 @@ User stories has been divided and done within fixed iterations, each iteration l
 - As a logged in I can like a post to encourage the post owner to participate more.
 - As a logged in I can follow a pupil or a teacher so i can see their adventures. 
 
-### **Epic 2 - Customization**
+### **Epic 2 - Customizations**
 
 ### **Target Audience**
 - Storytellers  who enjoy sharing their fun times experience.
