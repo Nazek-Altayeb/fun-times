@@ -33,10 +33,10 @@ User stories has been divided and done within fixed iterations, each iteration l
 - As a registered  user, i can login, so i can benefit my access priviliges.
 - As a logged in user, I can logout, so I can secure my account.
 - As a logged in user, I can edit my profile, so I can view/update my information.
-- As a logged in I can write picnics suggestions so other pupils and teachers can consider.
-- As a logged in I can comment on others posts so i can share my opnion. 
-- As a logged in I can like a post to encourage the post owner to participate more.
-- As a logged in I can follow a pupil or a teacher so i can see their adventures. 
+- As a logged in user, I can write picnics suggestions so other pupils and teachers can consider.
+- As a logged in user, I can comment on others posts so i can share my opnion. 
+- As a logged in user, I can like a post to encourage the post owner to participate more.
+- As a logged in user, I can follow a pupil or a teacher so i can see their adventures. 
 
 ### **Epic 2 - Customizations**
 
@@ -96,11 +96,12 @@ I have followed the iterative approach, each sprint last for 5 days.
     - [x] [User story: Registration](https://github.com/Nazek-Altayeb/fun-times/issues/4)<code style="color:red">(Must have)</code>
     - [x] Fix issues caused by configuration errors <code style="color:red">(Must have)</code>
 - **Sprint 4 (Sep 6th To 10th, 2023)**
-    - [] [User story: Login](https://github.com/Nazek-Altayeb/fun-times/issues/5) <code style="color:red">(Must have)</code>
+    - [x] [User story: Login](https://github.com/Nazek-Altayeb/fun-times/issues/5) <code style="color:red">(Must have)</code>
     - [] [Combine the API and the front-end in the same workspace](https://github.com/Nazek-Altayeb/fun-times/issues/8) <code style="color:#5319E7">(Should have)</code>
 - **Sprint 5 (Sep 11th To 15th, 2023)**
-    - [] [User story: Logout](https://github.com/Nazek-Altayeb/fun-times/issues/6) <code style="color:red">(Must have)</code>
+    - [x] [User story: Logout](https://github.com/Nazek-Altayeb/fun-times/issues/6) <code style="color:red">(Must have)</code>
     - [] [User story: Profile management](https://github.com/Nazek-Altayeb/fun-times/issues/7) <code style="color:#5319E7">(Should have)</code>
+    - [x] [User story: Create post](https://github.com/Nazek-Altayeb/fun-times/issues/10) <code style="color:red">(Must have)</code>
 
 # Bugs
 ### **Fixed bugs**
