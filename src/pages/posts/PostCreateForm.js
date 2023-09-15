@@ -147,10 +147,16 @@ function PostCreateForm() {
                                 </Form.Label>
                             )}
 
-                            <Form.File
+                            {/*<Form.File
                                 id="image-upload"
                                 accept="image/*"
                                 onChange={handleChangeImage}
+                                ref={imageInput}
+                            />*/}
+                            <Form.Control
+                                type="file"
+                                onChange={handleChangeImage}
+                                accept="image/*"
                                 ref={imageInput}
                             />
                         </Form.Group>

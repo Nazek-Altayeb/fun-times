@@ -20,7 +20,7 @@ function App() {
 
                     <Route exact path='/signup' render={() => <SignUpForm />} />
 
-                    <Route exact path="/posts/create" render={() => <PostCreateForm />} />
+                    <Route exact path='/posts/create' render={() => <PostCreateForm />} />
 
                     <Route render={() => <h1> Page not found !</h1>} />
 
