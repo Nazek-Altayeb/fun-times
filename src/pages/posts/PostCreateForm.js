@@ -153,12 +153,6 @@ function PostCreateForm() {
                                 onChange={handleChangeImage}
                                 ref={imageInput}
                             />
-                            {/*<Form.Control
-                                type="file"
-                                accept="image/*"
-                                onChange={handleChangeImage}
-                                ref={imageInput}
-                            />*/}
                         </Form.Group>
                         {errors?.image?.map((message, idx) => (
                             <Alert variant="warning" key={idx}>
