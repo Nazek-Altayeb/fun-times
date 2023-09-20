@@ -1,12 +1,12 @@
 .Row {
     height: calc(100vh - 81px);
   }
-  .Input {
+  .Input {    
     background: #ffffff;
-    border: 1px solid #f0f1f9;
+    border: 1px solid #ececa3;
     box-sizing: border-box;
     border-radius: 2px;
-    color: #7177a1;
+    color: var(--clr-green-light);
     text-align: center;
     padding: 10px;
   }
@@ -19,7 +19,7 @@
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: #2142b2;
+    color: #607c3c;
   }
   
   .Link {

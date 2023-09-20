@@ -9,8 +9,25 @@
 .Content {
     background-color: #ffffff;
     padding: 10px;
-    border-radius: 2px;
-    border: 1px solid #dadadf;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: 1px solid #ececa3;
+    box-shadow: 0 2px 4px #b5e550;
+}
+
+.PopularProfiles{
+    padding-top: 1rem;
+    border: solid 1px #ececa3 ;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    box-shadow: 0 2px 4px #b5e550;
+}
+
+.SignInUpContainer{
+    width: 70%;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: 1px solid #ececa3;
+    box-shadow: 0 2px 4px #b5e550;
 }
 
 .FillerImage {

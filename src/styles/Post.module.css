@@ -1,24 +1,37 @@
 .Post {
     background-color: #ffffff;
-    border: 1px solid #dadadf;
-    border-radius: 2px;
+    border: 1px solid #ececa3 ;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     margin-bottom: 16px;
     text-align: center;
+    box-shadow: 0 2px 4px #b5e550;
   }
   
-  .Post figure,
-  h5 {
-    margin: 0 0;
-  }
-  
-  .Heart {
-    color: #f85032;
-  }
-  
-  .Heart:hover {
-    color: #2142b2;
-  }
-  
-  .HeartOutline:hover {
-    color: #f85032;
-  }
+.Post figure,
+h5 {
+margin: 0 0;
+}
+
+.Card, 
+.card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;    
+}
+
+.Card,
+.card-img-bottom{
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;  
+}
+
+.Heart {
+color: #f85032;
+}
+
+.Heart:hover {
+color: #2142b2;
+}
+
+.HeartOutline:hover {
+color: #f85032;
+}
