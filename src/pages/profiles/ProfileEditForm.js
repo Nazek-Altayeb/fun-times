@@ -103,7 +103,6 @@ const ProfileEditForm = () => {
                     rows={7}
                 />
             </Form.Group>
-            {/** add the 4 fields here : age, favourite_hobby, visited_city, activity */}
             <Form.Group>
                 <Form.Label>Visited city </Form.Label>
                 <Form.Control
