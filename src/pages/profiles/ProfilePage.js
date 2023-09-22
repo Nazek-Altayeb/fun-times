@@ -108,22 +108,23 @@ function ProfilePage() {
                 </Col>
                 {profile?.content && <Col className="p-3">{profile.content}</Col>}
             </Row>
-            <Row className="justify-content-center no-gutters">
+            <hr className={styles.Line} />
+            <Row className="justify-content-center no-gutters text-center">
                 <Col xs={3} className="my-2">
+                    <div>Age</div>
                     <div>{profile?.age}</div>
-                    <div>age</div>
                 </Col>
                 <Col xs={3} className="my-2">
+                    <div>Favourite_hobby</div>
                     <div>{profile?.favourite_hobby}</div>
-                    <div>favourite_hobby</div>
                 </Col>
                 <Col xs={3} className="my-2">
-                    <div>{profile?.Visited_city}</div>
                     <div>Visited_city</div>
+                    <div>{profile?.visited_city}</div>
                 </Col>
                 <Col xs={3} className="my-2">
+                    <div>Activity</div>
                     <div>{profile?.activity}</div>
-                    <div>activity</div>
                 </Col>
             </Row>
         </>
@@ -132,7 +133,7 @@ function ProfilePage() {
     const mainProfilePosts = (
         <>
             <hr />
-            <p className="text-center">{profile?.owner}'s posts</p>
+            <p className={`${"text-center"} ${styles.Title}`}> {profile?.owner}'s posts</p>
             <hr />
             {profilePosts.results.length ? (
                 <InfiniteScroll

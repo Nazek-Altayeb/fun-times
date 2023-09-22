@@ -29,8 +29,12 @@ const ProfileEditForm = () => {
         name: "",
         content: "",
         image: "",
+        visited_city: "",
+        favourite_hobby: "",
+        activity: "",
+        age: 0,
     });
-    const { name, content, image } = profileData;
+    const { name, content, image, visited_city, favourite_hobby, activity, age } = profileData;
 
     const [errors, setErrors] = useState({});
 
@@ -39,8 +43,8 @@ const ProfileEditForm = () => {
             if (currentUser?.profile_id?.toString() === id) {
                 try {
                     const { data } = await axiosReq.get(`/profiles/${id}/`);
-                    const { name, content, image } = data;
-                    setProfileData({ name, content, image });
+                    const { name, content, image, visited_city, favourite_hobby, activity, age } = data;
+                    setProfileData({ name, content, image, visited_city, favourite_hobby, activity, age });
                 } catch (err) {
                     console.log(err);
                     history.push("/");
@@ -65,6 +69,10 @@ const ProfileEditForm = () => {
         const formData = new FormData();
         formData.append("name", name);
         formData.append("content", content);
+        formData.append("visited_city", visited_city);
+        formData.append("favourite_hobby", favourite_hobby);
+        formData.append("activity", activity);
+        formData.append("age", age);
 
         if (imageFile?.current?.files[0]) {
             formData.append("image", imageFile?.current?.files[0]);
@@ -96,6 +104,46 @@ const ProfileEditForm = () => {
                 />
             </Form.Group>
             {/** add the 4 fields here : age, favourite_hobby, visited_city, activity */}
+            <Form.Group>
+                <Form.Label>Visited city </Form.Label>
+                <Form.Control
+                    as="textarea"
+                    value={visited_city}
+                    onChange={handleChange}
+                    name="visited_city"
+                    rows={1}
+                />
+            </Form.Group>
+            <Form.Group>
+                <Form.Label>Favourite hobby </Form.Label>
+                <Form.Control
+                    as="textarea"
+                    value={favourite_hobby}
+                    onChange={handleChange}
+                    name="favourite_hobby"
+                    rows={1}
+                />
+            </Form.Group>
+            <Form.Group>
+                <Form.Label>Activity </Form.Label>
+                <Form.Control
+                    as="textarea"
+                    value={activity}
+                    onChange={handleChange}
+                    name="activity"
+                    rows={1}
+                />
+            </Form.Group>
+            <Form.Group>
+                <Form.Label>Age </Form.Label>
+                <Form.Control
+                    as="textarea"
+                    value={age}
+                    onChange={handleChange}
+                    name="age"
+                    rows={1}
+                />
+            </Form.Group>
             {errors?.content?.map((message, idx) => (
                 <Alert variant="warning" key={idx}>
                     {message}
