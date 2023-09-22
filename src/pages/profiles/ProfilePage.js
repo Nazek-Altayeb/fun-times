@@ -108,6 +108,24 @@ function ProfilePage() {
                 </Col>
                 {profile?.content && <Col className="p-3">{profile.content}</Col>}
             </Row>
+            <Row className="justify-content-center no-gutters">
+                <Col xs={3} className="my-2">
+                    <div>{profile?.age}</div>
+                    <div>age</div>
+                </Col>
+                <Col xs={3} className="my-2">
+                    <div>{profile?.favourite_hobby}</div>
+                    <div>favourite_hobby</div>
+                </Col>
+                <Col xs={3} className="my-2">
+                    <div>{profile?.Visited_city}</div>
+                    <div>Visited_city</div>
+                </Col>
+                <Col xs={3} className="my-2">
+                    <div>{profile?.activity}</div>
+                    <div>activity</div>
+                </Col>
+            </Row>
         </>
     );
 
@@ -139,21 +157,28 @@ function ProfilePage() {
         <Row>
             <Col className="py-2 p-0 p-lg-2" lg={8}>
                 <PopularProfiles mobile />
-                <Container className={appStyles.Content}>
-                    {hasLoaded ? (
-                        <>
+
+                {hasLoaded ? (
+                    <>
+                        <Container className={appStyles.Content}>
                             {mainProfile}
+                        </Container>
+                        <br />
+                        <Container className={appStyles.ProfilePage}>
                             {mainProfilePosts}
-                        </>
-                    ) : (
-                        <Asset spinner />
-                    )}
-                </Container>
+                        </Container>
+                    </>
+                ) : (
+                    <Asset spinner />
+
+                )}
+
+
             </Col>
             <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
                 <PopularProfiles />
             </Col>
-        </Row>
+        </Row >
     );
 }
 

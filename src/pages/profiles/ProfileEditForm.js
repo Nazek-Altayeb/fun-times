@@ -95,7 +95,7 @@ const ProfileEditForm = () => {
                     rows={7}
                 />
             </Form.Group>
-
+            {/** add the 4 fields here : age, favourite_hobby, visited_city, activity */}
             {errors?.content?.map((message, idx) => (
                 <Alert variant="warning" key={idx}>
                     {message}
