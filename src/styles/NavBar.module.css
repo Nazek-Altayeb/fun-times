@@ -94,3 +94,28 @@ height: 8rem;
         font-size: 18px;
       }
 }
+@media screen and (max-width: 912px){
+    .NavLink {
+        padding: 4px 4px;
+        font-size: 15px;
+      }
+      .NavBar{
+        height: 10rem;
+        margin-left: 0;
+        margin-right: 0;
+      }
+}
+
+@media screen and (max-width: 1024px){
+    .NavBar{
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+}
+
+@media screen and (max-width: 1280px){
+    .NavBar{
+        margin-left: 5rem;
+        margin-right: 5rem;
+      }
+}
