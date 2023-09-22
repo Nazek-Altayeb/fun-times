@@ -1,4 +1,5 @@
 .NavBar{
+background-color: #ffffff;
 border: solid 1px #ececa3;
 border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 margin-left: 10rem;
@@ -7,6 +8,7 @@ margin-top: 2rem;
 display: flex;
 align-items: center;
 box-shadow: 0 2px 4px #b5e550;
+height: 8rem;
 }
 
 .NavLink {
