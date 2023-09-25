@@ -62,20 +62,23 @@ User stories has been divided and done within fixed iterations, each iteration l
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design the website wireframes, 
 I've created wireframes for different screen sizes (desktop, mobile).
 <details><summary>Home</summary>
-<img src="./src/assets/wireframes/home.png">
+<img src="./src/assets/wireframes/home-page.png">
 </details>
-<details><summary>About</summary>
-<img src="">
+<details><summary>Sign in</summary>
+<img src="./src/assets/wireframes/signin-page.png">
 </details>
-<details><summary>Sign Up / Sign in</summary>
-<img src="">
+<details><summary>Profile page</summary>
+<img src="./src/assets/wireframes/profile-page.png">
 </details>
-<details><summary>Profile</summary>
-<img src="">
+<details><summary>Edit post</summary>
+<img src="./src/assets/wireframes/edit-post.png">
+</details>
+<details><summary>Edit profile</summary>
+<img src="./src/assets/wireframes/edit-profile.png">
 </details>
 
 # System Design
-Here stays the ERD Diagram ......... !
+Here stays the ERD Diagram .........!
 
 # Agile development process
 The development process went smoothly with the use of the Github roadmap project board.
