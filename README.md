@@ -78,8 +78,8 @@ I've created wireframes for different screen sizes (desktop, mobile).
 </details>
 
 # System Design
-Here stays the ERD Diagram .........!
-
+The database consists of four tables, Profiles, Posts, Comments, Likes, Followers.
+Here is the Entity relationship diagram ![ERD](./src/assets/erd.png)
 # Agile development process
 The development process went smoothly with the use of the Github roadmap project board.
 I named my project in the Github **fun times**.
