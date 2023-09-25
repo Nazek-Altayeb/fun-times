@@ -105,7 +105,7 @@ I have followed the iterative approach, each sprint last for 5 days.
     - [] [Combine the API and the front-end in the same workspace](https://github.com/Nazek-Altayeb/fun-times/issues/8) <code style="color:#5319E7">(Should have)</code>
 - **Sprint 5 (Sep 11th To 15th, 2023)**
     - [x] [User story: Logout](https://github.com/Nazek-Altayeb/fun-times/issues/6) <code style="color:red">(Must have)</code>
-    - [] [User story: Profile management](https://github.com/Nazek-Altayeb/fun-times/issues/7) <code style="color:#5319E7">(Should have)</code>
+    - [x] [User story: Profile management](https://github.com/Nazek-Altayeb/fun-times/issues/7) <code style="color:#5319E7">(Should have)</code>
     - [x] [User story: Create post](https://github.com/Nazek-Altayeb/fun-times/issues/10) <code style="color:red">(Must have)</code>
 
 # Bugs
@@ -141,13 +141,40 @@ The website has been implemented with the use of a variety of technologies.
 - [Balsamiq](https://balsamiq.com/) used for designing the website UI.
 
 # Deployment
-To Do ......
-Here stays the  (Fork, Clone, Heruko Deployment) paragraphs ........... 
+The website was deployed using Heroku, following the steps below:
+
+1. **Create a [Heroku](https://dashboard.heroku.com/) Account**: If you do not have a Heroku account already, create one. Heroku is a platform that enables developers to build, run, and operate applications entirely in the cloud.
+2. **Prepare your Application**: Commit and push your code to your GitHub repository. Ensure that all necessary changes have been made and the latest version of the application is ready for deployment.
+3. **Create a New Application on Heroku**: From your Heroku dashboard, create a new application. Choose an appropriate name for your application and select a region.
+4. **Set Environment Variables**: Ensure the environmental variables are also added to your Heroku app settings under the Config Vars section. This is done to protect sensitive data and also to allow the services to communicate with your Heroku app.
+5. **Deployment Process**: In the Heroku dashboard, navigate to the "Deploy" section of your application. Here, you will be able to link your GitHub repository to your Heroku app. Ensure that the repository and branch that contain the version of your app that you wish to deploy are selected. Finally, click "Deploy Branch" under the "Manual deploy" section.
+6. **Verify Deployment**: After the deployment process completes, Heroku will provide a URL to the live application. Open this URL in your browser to ensure the application has been deployed successfully and is functioning as expected.
+
+**Fork**
+You can for fork the repository by following these steps:
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
+3. Wait for the forking process to complete. Once done, you will have a copy of the repository in your GitHub account.
+
+**Clone**
+You can clone the repository by following these steps:
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it 
+3. Select your preferred method for cloning: HTTPS, SSH, or GitHub CLI, and click the copy button to copy the repository URL to your clipboard.
+4. Open Git Bash (or your preferred terminal).
+5. Change the current working directory to the location where you want the cloned directory to be created.
+6. Type the command **'git clone'** followed by the URL you copied in step 3. The command should look like this: **git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY**.
+7. Press Enter to create your local clone.
 
 # Credits
-### **Content**
-To Do ......
-### **Media**
-To Do ......
-### **Aknowledgement**
-To Do ......
+
+## **Fonts**
+[Google Fonts](https://fonts.google.com/).
+
+## **Code**
+- Code Institute walk through project.
+
+# **Aknowledgement**
+- I programmed the project with the help of the open resource code os the Code Institute LMS, and i extended it the way that serve my idea.
+- Many thanks to Mentor **Antonio Rodriguez** for continuous helpful feedback.
+- Thanks to Tutors support at Code Institute for their support.
