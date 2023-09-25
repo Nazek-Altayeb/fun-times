@@ -80,8 +80,9 @@ I've created wireframes for different screen sizes (desktop, mobile).
 </details>
 
 # System Design
-The database consists of four tables, Profiles, Posts, Comments, Likes, Followers.
-Here is the Entity relationship diagram ![ERD](./src/assets/erd.png)
+The Database for this project is a relational DB, consists of four tables, Profiles, Posts, Comments, Likes, Followers.
+The backend has been developed using the Django REST Framework. The ERD and the API functionalities are clearly expressed here in the [Backend](https://github.com/Nazek-Altayeb/fun_times_api) project.
+
 # Agile development process
 The development process went smoothly with the use of the Github roadmap project board.
 I named my project in the Github **fun times**.
