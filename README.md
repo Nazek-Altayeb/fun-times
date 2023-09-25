@@ -151,12 +151,14 @@ The website was deployed using Heroku, following the steps below:
 6. **Verify Deployment**: After the deployment process completes, Heroku will provide a URL to the live application. Open this URL in your browser to ensure the application has been deployed successfully and is functioning as expected.
 
 **Fork**
+
 You can for fork the repository by following these steps:
 1. Go to the GitHub repository
 2. Click on Fork button in upper right hand corner
 3. Wait for the forking process to complete. Once done, you will have a copy of the repository in your GitHub account.
 
 **Clone**
+
 You can clone the repository by following these steps:
 1. Go to the GitHub repository 
 2. Locate the Code button above the list of files and click it 
@@ -168,10 +170,10 @@ You can clone the repository by following these steps:
 
 # Credits
 
-## **Fonts**
+**Fonts**
 [Google Fonts](https://fonts.google.com/).
 
-## **Code**
+**Code**
 - Code Institute walk through project.
 
 # **Aknowledgement**
