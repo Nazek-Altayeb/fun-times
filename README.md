@@ -30,7 +30,7 @@ User stories has been divided and done within fixed iterations, each iteration l
 
 ### **Epic 2 - Main functionalities**
 - As a user (teacher/pupil) i can create an account, so i can access all features.
-- As a registered  user, i can login, so i can benefit my access priviliges.
+- As a registered user, i can login, so i can benefit my access priviliges.
 - As a logged in user, I can logout, so I can secure my account.
 - As a logged in user, I can edit my profile, so I can view/update my information.
 - As a logged in user, I can write picnics suggestions so other pupils and teachers can consider.
@@ -38,7 +38,9 @@ User stories has been divided and done within fixed iterations, each iteration l
 - As a logged in user, I can like a post to encourage the post owner to participate more.
 - As a logged in user, I can follow a pupil or a teacher so i can see their adventures. 
 
-### **Epic 2 - Customizations**
+### **Epic 3 - Customizations**
+- Customize cards dimentions (sign in card, post card, comment card, followers card)
+- adjust colors of (links, borders, cards shadow, fonts, icons) by using  [these colors](#colour-scheme).
 
 ### **Target Audience**
 - Storytellers  who enjoy sharing their fun times experience.
