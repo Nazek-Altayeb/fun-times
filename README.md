@@ -7,7 +7,7 @@ I aimed to keep the site attractive for specific age of people that range betwee
 
 ### **Colour Scheme**
 I have chosen the green palette colors as follow:
-- `#ececa3` : Borders (Header, Footer, Posts).
+- `#ececa3` : Border of the input fields.
 - `#607c3c` : active icons, Buttons
 - `#abc32f` : 
 - `#b5e550` : Cards shadow
@@ -31,7 +31,7 @@ User stories has been divided and done within fixed iterations, each iteration l
 
 ### **Epic 2 - Main functionalities**
 - As a user (teacher/pupil) i can create an account, so i can access all features.
-- As a registered user, i can login, so i can benefit my access priviliges.
+- As a registered user, I can login, so i can benefit my access priviliges.
 - As a logged in user, I can logout, so I can secure my account.
 - As a logged in user, I can edit my profile, so I can view/update my information.
 - As a logged in user, I can write picnics suggestions so other pupils and teachers can consider.
@@ -40,8 +40,9 @@ User stories has been divided and done within fixed iterations, each iteration l
 - As a logged in user, I can follow a pupil or a teacher so i can see their adventures. 
 
 ### **Epic 3 - Customizations**
-- Customize cards dimentions (sign in card, post card, comment card, followers card)
-- adjust colors of (links, borders, cards shadow, fonts, icons) by using  [these colors](#colour-scheme).
+- Customize cards dimentions (sign in card, post card, comment card, followers card).
+- Adjust colors of (links, borders, cards shadow, fonts, icons) by using  [these colors](#colour-scheme).
+- Extend the profile model, add new fields (age, activity, favourite_hobby, visited_city).
 
 ### **Target Audience**
 - Storytellers  who enjoy sharing their fun times experience.
@@ -109,6 +110,14 @@ I have followed the iterative approach, each sprint last for 5 days.
     - [x] [User story: Logout](https://github.com/Nazek-Altayeb/fun-times/issues/6) <code style="color:red">(Must have)</code>
     - [x] [User story: Profile management](https://github.com/Nazek-Altayeb/fun-times/issues/7) <code style="color:#5319E7">(Should have)</code>
     - [x] [User story: Create post](https://github.com/Nazek-Altayeb/fun-times/issues/10) <code style="color:red">(Must have)</code>
+- **Sprint 6 (Sep 16th To 20th, 2023)**
+    - [x] [Fix bugs and errors](https://github.com/Nazek-Altayeb/fun-times/issues/11) <code style="color:red">(Must have)</code> 
+- **Sprint 7 (Sep 21st To 25th, 2023)**
+    - [x] [Extend the profile model](https://github.com/Nazek-Altayeb/fun-times/issues/12) <code style="color:#5319E7">(Should have)</code>
+   
+- **Sprint 8 (Sep 26th To 30th, 2023)**
+   
+   
 
 # Bugs
 ### **Fixed bugs**
