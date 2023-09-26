@@ -1,5 +1,6 @@
 # Goal
 Plan and develop school interactive page where pupils and teachers share their individual summer activities. 
+[Click this link to view the Website.](https://school-fun-times-1ec741f7cadd.herokuapp.com/)
 
 # User Experience
 I aimed to keep the site attractive for specific age of people that range between primary and secondary school children, accordingly i have chosen the following colours and fonts.
@@ -7,9 +8,9 @@ I aimed to keep the site attractive for specific age of people that range betwee
 ### **Colour Scheme**
 I have chosen the green palette colors as follow:
 - `#ececa3` : Borders (Header, Footer, Posts).
-- `#607c3c` : active icons.
+- `#607c3c` : active icons, Buttons
 - `#abc32f` : 
-- `#b5e550` :
+- `#b5e550` : Cards shadow
 - `#809c13` : 
 
 ![colour schema](./src/assets/color-pallete.png)
