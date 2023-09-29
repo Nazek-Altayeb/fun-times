@@ -28,8 +28,15 @@ function PostCreateForm() {
         title: "",
         content: "",
         image: "",
+
     });
     const { title, content, image } = postData;
+
+    const [postVisibility, setPostVisibility] = useState({
+        visibility: "",
+    });
+
+    const { visibility } = postVisibility;
 
     const imageInput = useRef(null);
     const history = useHistory();
@@ -50,7 +57,13 @@ function PostCreateForm() {
             });
         }
     };
-
+    /**const handleChoiceChange = (visibility) => { setUserChoice(visibility) }*/
+    const handleChoiceChange = (event) => {
+        setPostVisibility({
+            ...postVisibility,
+            [event.target.name]: event.target.value,
+        });
+    };
     const handleSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData();
@@ -58,6 +71,7 @@ function PostCreateForm() {
         formData.append("title", title);
         formData.append("content", content);
         formData.append("image", imageInput.current.files[0]);
+        formData.append("visibility", visibility);
 
         try {
             const { data } = await axiosReq.post("/posts/", formData);
@@ -72,6 +86,24 @@ function PostCreateForm() {
 
     const textFields = (
         <div className="text-center">
+            <Form.Group>
+                <Form.Label>Select visibility</Form.Label>
+                <Form.Control
+                    as="select"
+                    size="sm"
+                    custom
+                    name="visibility"
+                    value={visibility}
+                    onChange={handleChoiceChange}>
+                    <option>public</option>
+                    <option>private</option>
+                </Form.Control>
+            </Form.Group>
+            {errors?.visibility?.map((message, idx) => (
+                <Alert variant="warning" key={idx}>
+                    {message}
+                </Alert>
+            ))}
             <Form.Group>
                 <Form.Label>Title</Form.Label>
                 <Form.Control
