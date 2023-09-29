@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 
 import Post from "./Post";
+import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import Asset from "../../components/Asset";
 
 import appStyles from "../../App.module.css";
@@ -24,6 +25,12 @@ function PostsPage({ message, filter = "" }) {
     const { pathname } = useLocation();
 
     const [query, setQuery] = useState("");
+    /** const { owner } = Post;*/
+
+    const currentUser = useCurrentUser();
+    const current_user = currentUser?.username;
+    const followers = posts.followers;
+    const is_follower = followers?.some(follower => currentUser?.username === follower);
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -69,7 +76,18 @@ function PostsPage({ message, filter = "" }) {
                         {posts.results.length ? (
                             <InfiniteScroll
                                 children={posts.results.map((post) => (
-                                    <Post key={post.id} {...post} setPosts={setPosts} />
+                                    /** in case the visibility is private display the post only if the current user is either the owner or the follower*/
+                                    post.visibility === "private" && (post.owner === current_user || is_follower) ? (
+                                        <Post key={post.id} {...post} setPosts={setPosts} />
+                                    ) : (
+
+                                        post.visibility === "public" ? (
+                                            <Post key={post.id} {...post} setPosts={setPosts} />) : (
+                                            <>
+                                            </>
+                                        )
+                                    )
+
                                 ))}
                                 dataLength={posts.results.length}
                                 loader={<Asset spinner />}
