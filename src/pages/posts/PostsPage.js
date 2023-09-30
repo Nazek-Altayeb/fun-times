@@ -29,8 +29,11 @@ function PostsPage({ message, filter = "" }) {
 
     const currentUser = useCurrentUser();
     const current_user = currentUser?.username;
-    const followers = posts.followers;
-    const is_follower = followers?.some(follower => currentUser?.username === follower);
+
+    const userIsFollower = (followers) => {
+        /**console.log(followers);*/
+        return followers?.some(follower => currentUser?.username === follower.followers);
+    }
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -77,7 +80,7 @@ function PostsPage({ message, filter = "" }) {
                             <InfiniteScroll
                                 children={posts.results.map((post) => (
                                     /** in case the visibility is private display the post only if the current user is either the owner or the follower*/
-                                    post.visibility === "private" && (post.owner === current_user || is_follower) ? (
+                                    post.visibility === "private" && (post.owner === current_user || userIsFollower(post.followers)) ? (
                                         <Post key={post.id} {...post} setPosts={setPosts} />
                                     ) : (
 
