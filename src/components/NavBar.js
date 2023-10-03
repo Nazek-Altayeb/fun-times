@@ -33,7 +33,7 @@ const NavBar = () => {
             activeClassName={styles.Active}
             to="/posts/create"
         >
-            <i className="far fa-plus-square"></i>Share an adventure
+            <i className="far fa-plus-square"></i>Post
         </NavLink>
     );
     const loggedInIcons = (
@@ -99,7 +99,7 @@ const NavBar = () => {
             <Container fluid>
                 <NavLink to="/">
                     <Navbar.Brand>
-                        <img src={logo} alt="logo" height="120" />
+                        <img src={logo} alt="logo" width="auto" height="120" />
                     </Navbar.Brand>
                 </NavLink>
                 {currentUser && addPostIcon}
