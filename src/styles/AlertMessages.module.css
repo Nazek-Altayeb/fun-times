@@ -1,0 +1,18 @@
+.alert-warning-custom {
+    background-color: #ececa3;
+    color: #FF0000;
+    border: 1px solid #abc32f;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    padding: 8px;
+    margin-top: 10px;
+  }
+  
+  .alert-success-custom {
+    background-color: #ececa3;
+    color: #809c13;
+    font-weight: 500;
+    border: 1px solid #abc32f;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    padding: 8px;
+    margin-top: 10px;
+  }

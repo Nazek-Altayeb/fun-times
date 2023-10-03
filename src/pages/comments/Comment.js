@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Media } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
@@ -7,6 +7,8 @@ import styles from "../../styles/Comment.module.css";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { axiosRes } from "../../api/axiosDefaults";
 import CommentEditForm from "./CommentEditForm";
+import alertStyles from "../../styles/AlertMessages.module.css";
+import Alert from "react-bootstrap/Alert";
 
 const Comment = (props) => {
     const {
@@ -18,11 +20,24 @@ const Comment = (props) => {
         id,
         setPost,
         setComments,
+        setCommentSuccessMessage,
     } = props;
 
     const [showEditForm, setShowEditForm] = useState(false);
     const currentUser = useCurrentUser();
     const is_owner = currentUser?.username === owner;
+
+    const [successMessage, setSuccessMessage] = useState(null);
+
+    useEffect(() => {
+        if (successMessage) {
+            const timer = setTimeout(() => {
+                setSuccessMessage(null);
+            }, 5000);
+
+            return () => clearTimeout(timer);
+        }
+    }, [successMessage]);
 
     const handleDelete = async () => {
         try {
@@ -40,11 +55,20 @@ const Comment = (props) => {
                 ...prevComments,
                 results: prevComments.results.filter((comment) => comment.id !== id),
             }));
+            setCommentSuccessMessage("Comment deleted successfully!");
         } catch (err) { }
     };
 
     return (
         <>
+            {successMessage && (
+                <Alert
+                    variant="success"
+                    className={alertStyles["alert-success-custom"]}
+                >
+                    {successMessage}
+                </Alert>
+            )}
             <hr />
             <Media>
                 <Link to={`/profiles/${profile_id}`}>
@@ -61,6 +85,7 @@ const Comment = (props) => {
                             profileImage={profile_image}
                             setComments={setComments}
                             setShowEditForm={setShowEditForm}
+                            setSuccessMessage={setSuccessMessage}
                         />
                     ) : (
                         <p>{content}</p>

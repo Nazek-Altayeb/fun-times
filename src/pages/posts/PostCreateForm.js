@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
+import alertStyles from "../../styles/AlertMessages.module.css";
 import Image from "react-bootstrap/Image";
 
 import Asset from "../../components/Asset";
@@ -75,7 +76,9 @@ function PostCreateForm() {
 
         try {
             const { data } = await axiosReq.post("/posts/", formData);
-            history.push(`/posts/${data.id}`);
+            history.push(`/posts/${data.id}`, {
+                message: "Your adventure was successfully posted.",
+            });
         } catch (err) {
             console.log(err);
             if (err.response?.status !== 401) {
@@ -100,7 +103,7 @@ function PostCreateForm() {
                 </Form.Control>
             </Form.Group>
             {errors?.visibility?.map((message, idx) => (
-                <Alert variant="warning" key={idx}>
+                <Alert variant="warning" key={idx} className={alertStyles["alert-warning-custom"]}>
                     {message}
                 </Alert>
             ))}
@@ -114,7 +117,7 @@ function PostCreateForm() {
                 />
             </Form.Group>
             {errors?.title?.map((message, idx) => (
-                <Alert variant="warning" key={idx}>
+                <Alert variant="warning" key={idx} className={alertStyles["alert-warning-custom"]}>
                     {message}
                 </Alert>
             ))}
@@ -130,7 +133,7 @@ function PostCreateForm() {
                 />
             </Form.Group>
             {errors?.content?.map((message, idx) => (
-                <Alert variant="warning" key={idx}>
+                <Alert variant="warning" key={idx} className={alertStyles["alert-warning-custom"]}>
                     {message}
                 </Alert>
             ))}
@@ -189,7 +192,7 @@ function PostCreateForm() {
                             />
                         </Form.Group>
                         {errors?.image?.map((message, idx) => (
-                            <Alert variant="warning" key={idx}>
+                            <Alert variant="warning" key={idx} className={alertStyles["alert-warning-custom"]}>
                                 {message}
                             </Alert>
                         ))}

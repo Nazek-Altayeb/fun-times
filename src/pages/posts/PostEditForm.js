@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
+import alertStyles from "../../styles/AlertMessages.module.css";
 import Image from "react-bootstrap/Image";
 
 import styles from "../../styles/PostCreateEditForm.module.css";
@@ -74,7 +75,9 @@ function PostEditForm() {
 
         try {
             await axiosReq.put(`/posts/${id}/`, formData);
-            history.push(`/posts/${id}`);
+            history.push(`/posts/${id}`, {
+                message: "Your adventure details were successfully updated.",
+            });
         } catch (err) {
             console.log(err);
             if (err.response?.status !== 401) {
@@ -95,7 +98,7 @@ function PostEditForm() {
                 />
             </Form.Group>
             {errors?.title?.map((message, idx) => (
-                <Alert variant="warning" key={idx}>
+                <Alert variant="warning" key={idx} className={alertStyles["alert-warning-custom"]}>
                     {message}
                 </Alert>
             ))}
@@ -111,7 +114,7 @@ function PostEditForm() {
                 />
             </Form.Group>
             {errors?.content?.map((message, idx) => (
-                <Alert variant="warning" key={idx}>
+                <Alert variant="warning" key={idx} className={alertStyles["alert-warning-custom"]}>
                     {message}
                 </Alert>
             ))}
@@ -156,7 +159,7 @@ function PostEditForm() {
                             />
                         </Form.Group>
                         {errors?.image?.map((message, idx) => (
-                            <Alert variant="warning" key={idx}>
+                            <Alert variant="warning" key={idx} className={alertStyles["alert-warning-custom"]}>
                                 {message}
                             </Alert>
                         ))}
