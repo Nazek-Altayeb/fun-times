@@ -41,7 +41,7 @@ width: 100%;
 
 .Image {
 max-height: 40vh;
-max-width: 100%;
+max-width: 90%;
 object-fit: contain;
 }
 * {

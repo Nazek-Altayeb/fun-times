@@ -4,7 +4,7 @@ import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { Card, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import Avatar from "../../components/Avatar";
-import { axiosRes } from "../../api/axiosDefaults";
+import { axiosRes, axiosReq } from "../../api/axiosDefaults";
 import { MoreDropdown } from "../../components/MoreDropdown";
 
 const Post = (props) => {
@@ -22,6 +22,8 @@ const Post = (props) => {
         updated_at,
         postPage,
         setPosts,
+        adventures_count,
+        adventure_id,
     } = props;
 
     const currentUser = useCurrentUser();
@@ -72,6 +74,45 @@ const Post = (props) => {
             console.log(err);
         }
     };
+    const handleAddToAdventureslist = async () => {
+        try {
+            const { data } = await axiosRes.post("/adventureslist/", { post: id });
+            setPosts((prevPosts) => ({
+                ...prevPosts,
+                results: prevPosts.results.map((post) => {
+                    return post.id === id
+                        ? {
+                            ...post,
+                            adventures_count: post.adventures_count + 1,
+                            adventure_id: data.id,
+                        }
+                        : post;
+                }),
+            }));
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
+    const handleRemoveFromAdventureslist = async () => {
+        try {
+            await axiosRes.delete(`/adventureslist/${adventure_id}/`);
+            setPosts((prevPosts) => ({
+                ...prevPosts,
+                results: prevPosts.results.map((post) => {
+                    return post.id === id
+                        ? {
+                            ...post,
+                            adventures_count: post.adventures_count - 1,
+                            adventure_id: null,
+                        }
+                        : post;
+                }),
+            }));
+        } catch (err) {
+            console.log(err);
+        }
+    };
 
     return (
         <Card className={styles.Post}>
@@ -107,13 +148,27 @@ const Post = (props) => {
                             <i className="far fa-heart" />
                         </OverlayTrigger>
                     ) : like_id ? (
-                        <span onClick={handleUnlike}>
-                            <i className={`fas fa-heart ${styles.Heart}`} />
-                        </span>
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={<Tooltip>Unlike!</Tooltip>}
+                        >
+                            <div>
+                                <span onClick={handleUnlike}>
+                                    <i className={`fas fa-heart ${styles.Heart}`} />
+                                </span>
+                            </div>
+                        </OverlayTrigger>
                     ) : currentUser ? (
-                        <span onClick={handleLike}>
-                            <i className={`far fa-heart ${styles.HeartOutline}`} />
-                        </span>
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={<Tooltip>Like!</Tooltip>}
+                        >
+                            <div>
+                                <span onClick={handleLike}>
+                                    <i className={`far fa-heart ${styles.HeartOutline}`} />
+                                </span>
+                            </div>
+                        </OverlayTrigger>
                     ) : (
                         <OverlayTrigger
                             placement="top"
@@ -124,12 +179,40 @@ const Post = (props) => {
                     )}
                     {likes_count}
                     <Link to={`/posts/${id}`}>
-                        <i className="far fa-comments" />
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={<Tooltip>Comments</Tooltip>}
+                        >
+                            <i className="far fa-comments" />
+                        </OverlayTrigger>
                     </Link>
                     {comments_count}
+                    {currentUser ? (
+                        adventure_id ? (
+                            <OverlayTrigger
+                                placement="top"
+                                overlay={<Tooltip>Remove from adventures list!</Tooltip>}
+                            >
+                                <span onClick={handleRemoveFromAdventureslist}>
+                                    <i className={`fa-solid fa-bucket ${styles.Heart}`} />
+                                </span>
+                            </OverlayTrigger>
+                        ) : (
+                            <OverlayTrigger
+                                placement="top"
+                                overlay={<Tooltip>Add to adventures list!</Tooltip>}
+                            >
+                                <span onClick={handleAddToAdventureslist}>
+                                    <i className={`fa-solid fa-bucket ${styles.HeartOutline}`} />
+                                </span>
+                            </OverlayTrigger>
+                        )
+                    ) : (
+                        <></>
+                    )}
                 </div>
             </Card.Body>
-        </Card>
+        </Card >
     );
 };
 

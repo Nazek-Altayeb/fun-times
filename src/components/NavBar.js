@@ -33,7 +33,7 @@ const NavBar = () => {
             activeClassName={styles.Active}
             to="/posts/create"
         >
-            <i className="far fa-plus-square"></i>Add post
+            <i className="far fa-plus-square"></i>Share an adventure
         </NavLink>
     );
     const loggedInIcons = (
@@ -43,7 +43,7 @@ const NavBar = () => {
                 activeClassName={styles.Active}
                 to="/feed"
             >
-                <i className="fas fa-stream"></i>Feed
+                <i className="fas fa-stream"></i>Following
             </NavLink>
             <NavLink
                 className={styles.NavLink}
@@ -51,6 +51,13 @@ const NavBar = () => {
                 to="/liked"
             >
                 <i className="fas fa-heart"></i>Liked
+            </NavLink>
+            <NavLink
+                to="/adventureslist"
+                className={styles.NavLink}
+                activeClassName={styles.Active}
+            >
+                <i className="fa-solid fa-bucket"></i>Bookmarked
             </NavLink>
             <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
                 <i className="fas fa-sign-out-alt"></i>Sign out
@@ -86,10 +93,10 @@ const NavBar = () => {
         <Navbar
             expanded={expanded}
             className={styles.NavBar}
-            expand="md"
+            expand="lg"
             fixed="top"
         >
-            <Container>
+            <Container fluid>
                 <NavLink to="/">
                     <Navbar.Brand>
                         <img src={logo} alt="logo" height="120" />

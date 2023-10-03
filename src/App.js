@@ -14,6 +14,7 @@ import ProfilePage from './pages/profiles/ProfilePage';
 import UsernameForm from "./pages/profiles/UsernameForm";
 import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
+import NotFound from "./components/NotFound";
 
 
 function App() {
@@ -51,7 +52,16 @@ function App() {
                             />
                         )}
                     />
-
+                    <Route
+                        exact
+                        path="/adventureslist"
+                        render={() => (
+                            <PostsPage
+                                message="No results found. Adjust the search keyword or add a post to your adventures."
+                                filter={`adventures_list__owner__profile=${profile_id}&ordering=-adventures_list__created_at&`}
+                            />
+                        )}
+                    />
                     <Route exact path='/signin' render={() => <SignInForm />} />
 
                     <Route exact path='/signup' render={() => <SignUpForm />} />
@@ -80,7 +90,7 @@ function App() {
                         render={() => <ProfileEditForm />}
                     />
 
-                    <Route render={() => <h1> Page not found !</h1>} />
+                    <Route render={() => <NotFound />} />
 
                 </Switch>
             </Container>
