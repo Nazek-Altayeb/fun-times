@@ -11,31 +11,38 @@ box-shadow: 0 2px 4px #b5e550;
 height: 8rem;
 }
 
+.navBarScroll {
+    background-color: white;
+  }
+
+.RotatedIcon {
+transform: rotate(-45deg);
+}
 
 .NavLink {
     padding: 5px 10px;
     font-size: 14px;
   }
   
-  .NavLink i {
-    padding: 5px 10px;
-    font-size: 24px;
-  }
-  .Active i {
-    color: #607c3c;
-  }
+.NavLink i {
+padding: 5px 10px;
+font-size: 24px;
+}
+.Active i {
+color: #607c3c;
+}
 
-  @media screen and (max-width: 400px) {
-    img {
-        height: 40px;
-    }
-    .NavBar{
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .Container{
-        background-color: #ffffff;
-    }
+@media screen and (max-width: 400px) {
+img {
+    height: 40px;
+}
+.NavBar{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.Container{
+    background-color: #ffffff;
+}
 }
 
 @media screen and (max-width: 414px) {

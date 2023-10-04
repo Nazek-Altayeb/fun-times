@@ -106,10 +106,12 @@ const NavBar = () => {
                 <Navbar.Toggle
                     ref={ref}
                     onClick={() => setExpanded(!expanded)}
-                    aria-controls="basic-navbar-nav"
+                    aria-controls="navbarScroll"
                 />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ml-auto text-left">
+                <Navbar.Collapse id="navbarScroll">
+                    <Nav className={`ms-auto my-2 my-lg-0 ${styles.navBarScroll} justify-content-end`}
+                        style={{ maxHeight: "250px" }}
+                        navbarScroll>
                         <NavLink
                             exact
                             className={styles.NavLink}
