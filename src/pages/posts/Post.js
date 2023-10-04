@@ -85,13 +85,16 @@ const Post = (props) => {
                             ...post,
                             adventures_count: post.adventures_count + 1,
                             adventure_id: data.id,
+
                         }
                         : post;
                 }),
+
             }));
         } catch (err) {
             console.log(err);
         }
+
     };
 
     const handleRemoveFromAdventureslist = async () => {
@@ -152,22 +155,18 @@ const Post = (props) => {
                             placement="top"
                             overlay={<Tooltip>Unlike!</Tooltip>}
                         >
-                            <div>
-                                <span onClick={handleUnlike}>
-                                    <i className={`fas fa-heart ${styles.Heart}`} />
-                                </span>
-                            </div>
+                            <span onClick={handleUnlike}>
+                                <i className={`fas fa-heart ${styles.Heart}`} />
+                            </span>
                         </OverlayTrigger>
                     ) : currentUser ? (
                         <OverlayTrigger
                             placement="top"
                             overlay={<Tooltip>Like!</Tooltip>}
                         >
-                            <div>
-                                <span onClick={handleLike}>
-                                    <i className={`far fa-heart ${styles.HeartOutline}`} />
-                                </span>
-                            </div>
+                            <span onClick={handleLike}>
+                                <i className={`far fa-heart ${styles.HeartOutline}`} />
+                            </span>
                         </OverlayTrigger>
                     ) : (
                         <OverlayTrigger
@@ -189,23 +188,30 @@ const Post = (props) => {
                     {comments_count}
                     {currentUser ? (
                         adventure_id ? (
-                            <OverlayTrigger
-                                placement="top"
-                                overlay={<Tooltip>Remove from adventures list!</Tooltip>}
-                            >
-                                <span onClick={handleRemoveFromAdventureslist}>
-                                    <i className={`fa-solid fa-bucket ${styles.Heart}`} />
-                                </span>
-                            </OverlayTrigger>
+                            <>
+                                <OverlayTrigger
+                                    placement="top"
+                                    overlay={<Tooltip>Remove from adventures list!</Tooltip>}
+                                >
+                                    <span onClick={handleRemoveFromAdventureslist}>
+                                        <i className={`fas fa-bookmark ${styles.Heart}`} />
+                                    </span>
+                                </OverlayTrigger>
+                                {adventures_count}
+                            </>
                         ) : (
-                            <OverlayTrigger
-                                placement="top"
-                                overlay={<Tooltip>Add to adventures list!</Tooltip>}
-                            >
-                                <span onClick={handleAddToAdventureslist}>
-                                    <i className={`fa-solid fa-bucket ${styles.HeartOutline}`} />
-                                </span>
-                            </OverlayTrigger>
+                            <>
+                                <OverlayTrigger
+                                    placement="top"
+                                    overlay={<Tooltip>Add to adventures list!</Tooltip>}
+                                >
+                                    <span onClick={handleAddToAdventureslist}>
+                                        <i className={`far fa-bookmark ${styles.HeartOutline}`} />
+                                    </span>
+                                </OverlayTrigger>
+                                {adventures_count}
+                            </>
+
                         )
                     ) : (
                         <></>

@@ -58,7 +58,7 @@ function App() {
                         render={() => (
                             <PostsPage
                                 message="No results found. Adjust the search keyword or add a post to your adventures."
-                                filter={`adventures_list__owner__profile=${profile_id}&ordering=-adventures_list__created_at&`}
+                                filter={`adventureslist__owner__profile=${profile_id}&ordering=-adventureslist__created_at&`}
                             />
                         )}
                     />

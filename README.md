@@ -7,11 +7,11 @@ I aimed to keep the site attractive for specific age of people that range betwee
 
 ### **Colour Scheme**
 I have chosen the green palette colors as follow:
-- `#ececa3` : Border of the input fields.
+- `#ececa3` : Border of the input fields, alert message background
 - `#607c3c` : active icons, Buttons
-- `#abc32f` : 
+- `#abc32f` : alert message box border
 - `#b5e550` : Cards shadow
-- `#809c13` : 
+- `#809c13` : alert message
 
 ![colour schema](./src/assets/color-pallete.png)
 
