@@ -182,8 +182,9 @@ I have followed the iterative approach, each sprint last for 5 days.
 
 
 # Testing 
-To Do ......
-Here stays a link for the mannual testing, and bugs ...!
+Manual testing is applied to ensure the reliability and consistency of the application, also a smooth user experience.
+
+Tests results are available [here](MANUALTEST.md).
 
 
 # Tools & Technologies
@@ -236,7 +237,12 @@ You can clone the repository by following these steps:
 # Credits
 
 **Fonts**
-[Google Fonts](https://fonts.google.com/).
+
+Gluten and Playfair Display from [Google Fonts](https://fonts.google.com/).
+
+**Images**
+
+Sign up, Sign in and About page images are from [Google Images](https://images.google.com/).
 
 **Code**
 - The base code is taken from Code institute walkthrough project, i have extend the functionalities in both frontend and backend according to my system design and logic.
