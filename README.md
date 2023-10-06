@@ -43,6 +43,9 @@ User stories has been divided and done within fixed iterations, each iteration l
 - Customize cards dimentions (sign in card, post card, comment card, followers card).
 - Adjust colors of (links, borders, cards shadow, fonts, icons) by using  [these colors](#colour-scheme).
 - Extend the profile model, add new fields (age, activity, favourite_hobby, visited_city).
+- As a logged in user, i can specify whether the created post is visible only to followers or not, so i can keep it private.
+- As a logged in user, i can bookmark a post created by me or others, so i can view it later.
+- As a user, I can reach the About page, so i can learn more about the website.  
 
 ### **Target Audience**
 - Storytellers  who enjoy sharing their fun times experience.
@@ -51,20 +54,60 @@ User stories has been divided and done within fixed iterations, each iteration l
 
 # Features
 ### **Existing features**
-- **Main page**
-- **Header**
+All features are listed below, screen shots are a long with the core features. 
 - **Account management**
-- **User profile**
-- **Add/Remove Post**
-- **Comment/Like**
-- **Follow**
-- **Footer**
-### **Future Features**
-- **Website reviews**
+    - Registration: Users register him/her self, so he/she could share their advetures and interact with others.
+    ![Register](https://res.cloudinary.com/nazek/image/upload/v1696580332/Sign_up_nfkw62.png)
+    - Login: Users can log in to their created account.
+    - Logout: Users can securely log out of their account so they maintain privacy.
+    - Profile Update: Users can update her/his personal information.
+    ![Profile](https://res.cloudinary.com/nazek/image/upload/v1696580334/profile_page_gpzlys.png)
+- **Post managment**
+    - Create adventure Post: Users write and upload an image expressing their journey.
+    ![Create Adventure](https://res.cloudinary.com/nazek/image/upload/v1696580332/create_post_jvk2uu.png)
+    - Read Posts: Users read the adventures written by other pupils or teachers.
+    - Update Posts: Users edit their posts to update their personal information or the post's.
+    ![update post information]()
+    - Delete Posts: when users change their mind, they may delete their own posts.
+- **Interaction**
+    - Search: Users search for posts or users for the sake of learning more.
 
+       ![search](https://res.cloudinary.com/nazek/image/upload/v1696582992/search_knepxv.png)
+    - Like: Users show appreciation by like posts that are written by others.
+
+       ![like](https://res.cloudinary.com/nazek/image/upload/v1696580332/like_bookmark_sgjbcs.png)
+    - Commenting: Users particpate by  commenting on posts shared by other users.
+    - View Comments: Users read comments on specific post to learn about what others have in mind.
+    - Update Comments: Users can edit comments to correct what they have wiritten.
+
+       ![add, update, remove comment](https://res.cloudinary.com/nazek/image/upload/v1696580332/add_update_delete_a_comment_bffztl.png)
+    - Delete Comments: A user can delete her/his own comments.
+    - Follow Users: A users can follow other users to be able to see their private posts as well as stay updated on their adventures.
+    
+       ![follow](https://res.cloudinary.com/nazek/image/upload/v1696582150/follow_users_vw8tyg.png)
+    - Bookmark: A user can save some specific and special posts wiritten by him or others in one place so he could a get back to them in the funture.
+    - Site Owner Administration: Account, Post, and Comment Management: Site owners can delete user accounts, posts, and comments to maintain a safe and 
+      high-quality user environment.
+- **Navigation**
+    - **Authenticated Users**
+        Users can navigate between all pages.
+        ![Navigation bar_authenticated users](https://res.cloudinary.com/nazek/image/upload/v1696583282/navigation_bar-authenticated_users_fiy2yo.png)
+    - **Unauthenticated Users**
+        Users can navigate between Login, Sign up, About and Home pages.
+        ![Navigation bar_unauthenticated users](https://res.cloudinary.com/nazek/image/upload/v1696583283/navigation_bar_unauthenticated_users_mn1jti.png)
+### **Future Features**
+- **Add reviews**
+    - User will be able then to add their own opions about the system capabilities, positve and negative points, 
+      and what functionalities could be added to the website that serve the interest and needs of the pupils and their teacher.
+- **Add videos**
+    - User will be able to add video a long with the photos he share when creating the posts.
+- **Change visibility**
+    - User will be able to change the visibility when updating the posts.
 # Wireframes
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design the website wireframes, 
 I've created wireframes for different screen sizes (desktop, mobile).
+The below wireframes are the intial UI design that is done when i start thinking about how the UI may look like.
+So, additions have been added to the UI accordning to further discussion with the superviser,  
 <details><summary>Home</summary>
 <img src="./src/assets/wireframes/home-page.png">
 </details>
@@ -82,7 +125,7 @@ I've created wireframes for different screen sizes (desktop, mobile).
 </details>
 
 # System Design
-The Database for this project is a relational DB, consists of four tables, Profiles, Posts, Comments, Likes, Followers.
+The Database for this project is a relational DB, consists of four tables, Profiles, Posts, Comments, Likes, Followers, adventures.
 The backend has been developed using the Django REST Framework. The ERD and the API functionalities are clearly expressed here in the [Backend](https://github.com/Nazek-Altayeb/fun_times_api) project.
 
 # Agile development process
@@ -126,6 +169,17 @@ I have followed the iterative approach, each sprint last for 5 days.
 - Bug: Navigation breaks
     - uninstall React and React-dom version 18, install version 17 
 - Bug: Refresh token is not working properly, means logged in user have to login again after page refresh. 
+- Bug: Navbar overlap in small devices, 
+    - Add media queries to adjust the Navbar margins and paddings in the Navbar styles
+- Bug: Like, comment and bookmark icons overlap in small screens
+    -  Remove the div container of each icon
+- Bug: image upload not working
+    - downgrade the React Bootstrap
+- Bug: navigation is not working properly
+    - in index.js,  import ReactDOM from `react-dom` instead of `react-dom/client`
+- Bug: Sign forms breaks
+    - add `axios ` , correct the path of the imported style files.
+
 
 # Testing 
 To Do ......
@@ -185,9 +239,10 @@ You can clone the repository by following these steps:
 [Google Fonts](https://fonts.google.com/).
 
 **Code**
-- Code Institute walk through project.
+- The base code is taken from Code institute walkthrough project, i have extend the functionalities in both frontend and backend according to my system design and logic.
+- References have been added to the code where i bring code from different external resources.
 
 # **Aknowledgement**
 - I programmed the project with the help of the open resource code os the Code Institute LMS, and i extended it the way that serve my idea.
 - Many thanks to Mentor **Antonio Rodriguez** for continuous helpful feedback.
-- Thanks to Tutors support at Code Institute for their support.
+- Thanks to some of the Tutors at Code Institute for their support.

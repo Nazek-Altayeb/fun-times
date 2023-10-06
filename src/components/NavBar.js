@@ -46,13 +46,6 @@ const NavBar = () => {
                 <i className="fas fa-stream"></i>Following
             </NavLink>
             <NavLink
-                className={styles.NavLink}
-                activeClassName={styles.Active}
-                to="/liked"
-            >
-                <i className="fas fa-heart"></i>Favourites
-            </NavLink>
-            <NavLink
                 to="/adventureslist"
                 className={styles.NavLink}
                 activeClassName={styles.Active}
@@ -119,6 +112,14 @@ const NavBar = () => {
                             to="/"
                         >
                             <i className="fas fa-home"></i>Home
+                        </NavLink>
+                        <NavLink
+                            exact
+                            className={styles.NavLink}
+                            activeClassName={styles.Active}
+                            to="/about"
+                        >
+                            <i className="fas fa-info"></i>About
                         </NavLink>
 
                         {currentUser ? loggedInIcons : loggedOutIcons}

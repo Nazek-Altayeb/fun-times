@@ -15,6 +15,7 @@ import UsernameForm from "./pages/profiles/UsernameForm";
 import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import NotFound from "./components/NotFound";
+import AboutPage from './pages/About';
 
 
 function App() {
@@ -65,6 +66,8 @@ function App() {
                     <Route exact path='/signin' render={() => <SignInForm />} />
 
                     <Route exact path='/signup' render={() => <SignUpForm />} />
+
+                    <Route exact path="/about" render={() => <AboutPage />} />
 
                     <Route exact path='/posts/create' render={() => <PostCreateForm />} />
 

@@ -58,7 +58,7 @@ function PostCreateForm() {
             });
         }
     };
-    /**const handleChoiceChange = (visibility) => { setUserChoice(visibility) }*/
+
     const handleChoiceChange = (event) => {
         setPostVisibility({
             ...postVisibility,
@@ -90,7 +90,7 @@ function PostCreateForm() {
     const textFields = (
         <div className="text-center">
             <Form.Group>
-                <Form.Label>Select visibility</Form.Label>
+                <Form.Label>Visibile only to followers ?</Form.Label>
                 <Form.Control
                     as="select"
                     size="sm"

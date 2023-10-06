@@ -20,6 +20,7 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #607c3c;
+    margin-bottom: 30px;
   }
   
   .Link {
@@ -31,16 +32,10 @@
   
   .Link span {
     color: #ff9254;
+    font-weight: 500;
   }
   
   .Container {
     padding: 30px 10px;
   }
   
-  .SignInCol {
-    height: 320px;
-  }
-  
-  .SignUpCol {
-    height: 375px;
-  }

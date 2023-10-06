@@ -25,13 +25,13 @@ function PostsPage({ message, filter = "" }) {
     const { pathname } = useLocation();
 
     const [query, setQuery] = useState("");
-    /** const { owner } = Post;*/
+
 
     const currentUser = useCurrentUser();
     const current_user = currentUser?.username;
 
     const userIsFollower = (followers) => {
-        /**console.log(followers);*/
+
         return followers?.some(follower => currentUser?.username === follower.followers);
     }
 
@@ -57,6 +57,7 @@ function PostsPage({ message, filter = "" }) {
     }, [filter, query, pathname]);
 
     return (
+
         <Row className="h-100">
             <Col className="py-2 p-0 p-lg-2" lg={8}>
                 <PopularProfiles mobile />
