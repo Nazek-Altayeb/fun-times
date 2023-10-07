@@ -24,11 +24,11 @@ This file express code validation, accessibility, performance on various devices
 ## Validation
 
 ### HTML Validation
+
 [W3C Markup Validation](https://validator.w3.org/) is a service provided by the W3C that  validates the HTML. It checks  syntax , semantics, improper tag usage, and others.
 This validating step helps ensuring adhere of the web pages to web standards.
 
-The html passed through the validation. 
-<details><summary>Results</summary>![Result](./src/assets/testing/html-filter.png)</details>
+The html passed through the validation. some filters have been applied <details><summary>Results</summary>![Result](./src/assets/testing/html-filter.png)</details>
 
 | **Tested** | **Result** | **View Result**
 --- | --- | --- 
@@ -40,6 +40,7 @@ The html passed through the validation.
 
 
 ### CSS Validation
+
 [W3C Jigsaw](https://jigsaw.w3.org/css-validator/) is a tool provided by the World Wide Web Consortium (W3C) that allows you to validate and check the correctness of your CSS code. It helps ensure that your web pages comply with the standards set by the W3C, promoting interoperability and accessibility. I have tested by adding each page to the validator.
 
 | **Tested** | **Result** | **View Result** 
@@ -213,7 +214,7 @@ the first three tables list the manual testing of features  according to Epics.
 | As a user (teacher/pupil) i can create an account, so i can access all features| Click the sign up icon in the navbar, and enter username and password twice. | User will be redirected to the sign in page. 
 | As a registered user, I can login, so i can benefit my access priviliges. | click on Sign in, and enter username and password | User is redirected to the Home page, will all features listed in the Navbar. 
 | As a logged in user, I can logout, so I can secure my account. | Click on the Sign out icon in the Navbar. | User is redirected to the Home page. 
-| As a logged in user, I can edit my profile, so I can view/update my information. | click on Profile in the Navbar | User is redirected to the Profile page
+| As a logged in user, I can edit my profile, so I can view/update my information. | click on Profile in the Navbar. | User is redirected to the Profile page
 | As a logged in user, I can write picnics suggestions so other pupils and teachers can consider.| click on Adventure in the Navbar | User is redirected to a page to add the adventure details (image, title, content)
 | As a logged in user, I can comment on others posts so i can share my opnion. | click on comment icon | User is redirected to the post page to add the comment.
 | As a logged in user, I can like a post to encourage the post owner to participate more. | click on like icon | Counter of likes wil be increased by 1
@@ -223,7 +224,8 @@ the first three tables list the manual testing of features  according to Epics.
 | **User Story** | **Action** | **Expected Result** 
 | --- | --- | --- 
 | As a logged in user, i can specify whether the created post is visible only to followers or not, so i can keep it private.| Choose private when create an adventure | Adventure will be visible only for followers. 
-| | |
+| As a logged in user, i can bookmark a post created either by me or others, so i can view it later.| click on bookmark icon | Posts is saved in the bookmarked page.
+| As a user, I can reach the About page, so i can learn more about the website.| click on About icon in the Navbar. | User is redirected.
 
 
 
