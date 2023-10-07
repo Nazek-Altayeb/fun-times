@@ -98,3 +98,19 @@ figure {
     background: #555;
   }
 
+  @media screen and (max-width: 375px){
+    .PopularProfiles{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .PopularProfiles{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 375px){
+    .PopularProfiles{
+        font-size: 0.8rem;
+    }
+}
