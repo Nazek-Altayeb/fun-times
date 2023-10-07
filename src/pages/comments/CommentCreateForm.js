@@ -23,7 +23,7 @@ function CommentCreateForm(props) {
         if (successMessage) {
             const timer = setTimeout(() => {
                 setSuccessMessage("");
-            }, 5000); // 5000 ms = 5 seconds
+            }, 5000); 
 
             return () => clearTimeout(timer);
         }
