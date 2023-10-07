@@ -67,7 +67,7 @@ All features are listed below, screen shots are a long with the core features.
     ![Create Adventure](https://res.cloudinary.com/nazek/image/upload/v1696580332/create_post_jvk2uu.png)
     - Read Posts: Users read the adventures written by other pupils or teachers.
     - Update Posts: Users edit their posts to update their personal information or the post's.
-    ![update post information]()
+    ![update post information](https://res.cloudinary.com/nazek/image/upload/v1696680410/update_post_a39ja6.png)
     - Delete Posts: when users change their mind, they may delete their own posts.
 - **Interaction**
     - Search: Users search for posts or users for the sake of learning more.
@@ -151,7 +151,7 @@ I have followed the iterative approach, each sprint last for 5 days.
     - [x] [Documentation: add new issues with labels to the roadmap project](https://github.com/users/Nazek-Altayeb/projects/4) <code style="color:#5319E7">(Should have)</code>
 - **Sprint 4 (Sep 6th To 10th, 2023)**
     - [x] [User story: Login](https://github.com/Nazek-Altayeb/fun-times/issues/5) <code style="color:red">(Must have)</code>
-    - [] [Combine the API and the front-end in the same workspace](https://github.com/Nazek-Altayeb/fun-times/issues/8) <code style="color:#5319E7">(Should have)</code>
+    - [ ] [Combine the API and the front-end in the same workspace](https://github.com/Nazek-Altayeb/fun-times/issues/8) <code style="color:#5319E7">(Should have)</code>
 - **Sprint 5 (Sep 11th To 15th, 2023)**
     - [x] [User story: Logout](https://github.com/Nazek-Altayeb/fun-times/issues/6) <code style="color:red">(Must have)</code>
     - [x] [User story: Profile management](https://github.com/Nazek-Altayeb/fun-times/issues/7) <code style="color:#5319E7">(Should have)</code>
