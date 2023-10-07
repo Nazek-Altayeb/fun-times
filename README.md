@@ -137,15 +137,18 @@ I have followed the iterative approach, each sprint last for 5 days.
     - [x] [User story: Setup environment](https://github.com/Nazek-Altayeb/fun-times/issues/1) <code style="color:red">(Must have)</code>
     - [x] [User story: Add project Goal and User-Stories to the readme](https://github.com/Nazek-Altayeb/fun-times/issues/2) <code style="color:#5319E7">(Should have)</code>
     - [x] [User story: Add navigation bar](https://github.com/Nazek-Altayeb/fun-times/issues/3) <code style="color:red">(Must have)</code>
+    - [x] [Documentation: Create roadmap project, add new issues with labels](https://github.com/users/Nazek-Altayeb/projects/4) <code style="color:#5319E7">(Should have)</code>
 - **Sprint 2 (Aug 23rd To 31th, 2023)**
     - [x] [User story: Registration](https://github.com/Nazek-Altayeb/fun-times/issues/4), moved to sprint 3<code style="color:red">(Must have)</code>
     - [x] [User story: Login](https://github.com/Nazek-Altayeb/fun-times/issues/5), moved to sprint 4 <code style="color:red">(Must have)</code>
     - [x] [User story: Logout](https://github.com/Nazek-Altayeb/fun-times/issues/6), moved to sprint 5 <code style="color:red">(Must have)</code>
     - [x] [User story: Profile management](https://github.com/Nazek-Altayeb/fun-times/issues/7), moved to sprint 5 <code style="color:red">(Must have)</code>
     - [x] [Deploy to Heroku](https://github.com/Nazek-Altayeb/fun-times/issues/9)<code style="color:#5319E7">(Should have)</code>
+    - [x] [Documentation: add new issues with labels to the roadmap project](https://github.com/users/Nazek-Altayeb/projects/4) <code style="color:#5319E7">(Should have)</code>
 - **Sprint 3 (Sep 1st To 5th, 2023)**
     - [x] [User story: Registration](https://github.com/Nazek-Altayeb/fun-times/issues/4)<code style="color:red">(Must have)</code>
-    - [x] Fix issues caused by configuration errors <code style="color:red">(Must have)</code>
+    - [x] [Bug fix: resolve issues caused by configuration errors]() <code style="color:red">(Must have)</code>
+    - [x] [Documentation: add new issues with labels to the roadmap project](https://github.com/users/Nazek-Altayeb/projects/4) <code style="color:#5319E7">(Should have)</code>
 - **Sprint 4 (Sep 6th To 10th, 2023)**
     - [x] [User story: Login](https://github.com/Nazek-Altayeb/fun-times/issues/5) <code style="color:red">(Must have)</code>
     - [] [Combine the API and the front-end in the same workspace](https://github.com/Nazek-Altayeb/fun-times/issues/8) <code style="color:#5319E7">(Should have)</code>
@@ -153,14 +156,26 @@ I have followed the iterative approach, each sprint last for 5 days.
     - [x] [User story: Logout](https://github.com/Nazek-Altayeb/fun-times/issues/6) <code style="color:red">(Must have)</code>
     - [x] [User story: Profile management](https://github.com/Nazek-Altayeb/fun-times/issues/7) <code style="color:#5319E7">(Should have)</code>
     - [x] [User story: Create post](https://github.com/Nazek-Altayeb/fun-times/issues/10) <code style="color:red">(Must have)</code>
+    - [x] [Documentation: Add new user stories ](#user-stories) <code style="color:#5319E7">(Should have)</code>
 - **Sprint 6 (Sep 16th To 20th, 2023)**
     - [x] [Fix bugs and errors](https://github.com/Nazek-Altayeb/fun-times/issues/11) <code style="color:red">(Must have)</code> 
+    - [x] [Documentation: List the findings with their resolve steps](#bugs) <code style="color:#5319E7">(Should have)</code>
 - **Sprint 7 (Sep 21st To 25th, 2023)**
     - [x] [Extend the profile model](https://github.com/Nazek-Altayeb/fun-times/issues/12) <code style="color:#5319E7">(Should have)</code>
+    - [x] [User story: post visibility](https://github.com/Nazek-Altayeb/fun-times/issues/13) <code style="color:#5319E7">(Should have)</code>    
+    - [x] [Documentation: Add new user stories, complete the color schema](#user-stories) <code style="color:#5319E7">(Should have)</code>
    
 - **Sprint 8 (Sep 26th To 30th, 2023)**
-   
-   
+    - [x] [Bug fix: Sign forms breaks ](https://github.com/Nazek-Altayeb/fun-times/issues/14) <code style="color:red">(Must have)</code>
+    - [x] [Bug fix: navigation is not working properly](https://github.com/Nazek-Altayeb/fun-times/issues/15) <code style="color:red">(Must have)</code>
+    - [x] [Bug fix: image upload not working](https://github.com/Nazek-Altayeb/fun-times/issues/16) <code style="color:red">(Must have)</code>
+    - [x] [Bug fix: post icons overlap in small screens](https://github.com/Nazek-Altayeb/fun-times/issues/17) <code style="color:red">(Must have)</code>
+    - [x] [Bug fix: Navbar overlap in small devices](https://github.com/Nazek-Altayeb/fun-times/issues/18) <code style="color:red">(Must have)</code>
+    - [x] [Documentation: Add features details](#features) <code style="color:#5319E7">(Should have)</code>
+- **Sprinit 9 (Oct 1st To 5th, 2023)**
+   - [x] [Clean Code](https://github.com/Nazek-Altayeb/fun-times/issues/19) <code style="color:#5319E7">(Should have)</code>
+   - [x] [Add references](https://github.com/Nazek-Altayeb/fun-times/issues/20) <code style="color:#5319E7">(Should have)</code>
+   - [x] [Documentation: Add MANAULTEST.md](MANUALTEST.md) <code style="color:#5319E7">(Should have)</code>
 
 # Bugs
 ### **Fixed bugs**
@@ -248,6 +263,8 @@ Sign up, Sign in and About page images are from [Google Images](https://images.g
 - The base code is taken from Code institute walkthrough project, i have extend the functionalities in both frontend and backend according to my system design and logic.
 - References have been added to the code where i bring code from different external resources.
 
+**Documentation**
+- At some part of the Readme.md and ManualTest.md, i follow the design of the following [Readme.md](https://github.com/SandraBergstrom/travel-tickr/tree/main) 
 # **Aknowledgement**
 - I programmed the project with the help of the open resource code os the Code Institute LMS, and i extended it the way that serve my idea.
 - Many thanks to Mentor **Antonio Rodriguez** for continuous helpful feedback.

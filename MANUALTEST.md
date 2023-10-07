@@ -208,9 +208,22 @@ the first three tables list the manual testing of features  according to Epics.
 | As a website user (teacher/pupil) I can view a navbar from all pages, so i can navigate easily between pages | Click navabar link. | User is redirected to the desired page. 
 
 **Epic 2 :  Main functionalities**
+| **User Story** | **Action** | **Expected Result** 
+| --- | --- | --- 
+| As a user (teacher/pupil) i can create an account, so i can access all features| Click the sign up icon in the navbar, and enter username and password twice. | User will be redirected to the sign in page. 
+| As a registered user, I can login, so i can benefit my access priviliges. | click on Sign in, and enter username and password | User is redirected to the Home page, will all features listed in the Navbar. 
+| As a logged in user, I can logout, so I can secure my account. | Click on the Sign out icon in the Navbar. | User is redirected to the Home page. 
+| As a logged in user, I can edit my profile, so I can view/update my information. | click on Profile in the Navbar | User is redirected to the Profile page
+| As a logged in user, I can write picnics suggestions so other pupils and teachers can consider.| click on Adventure in the Navbar | User is redirected to a page to add the adventure details (image, title, content)
+| As a logged in user, I can comment on others posts so i can share my opnion. | click on comment icon | User is redirected to the post page to add the comment.
+| As a logged in user, I can like a post to encourage the post owner to participate more. | click on like icon | Counter of likes wil be increased by 1
+| As a logged in user, I can follow a pupil or a teacher so i can see their adventures. | click on Follow that is at the 'Most popular profiles' box| All posts of this specific User including the private ones will be visible for you.
 
 **Epic 3 : Customizations**
-
+| **User Story** | **Action** | **Expected Result** 
+| --- | --- | --- 
+| As a logged in user, i can specify whether the created post is visible only to followers or not, so i can keep it private.| Choose private when create an adventure | Adventure will be visible only for followers. 
+| | |
 
 
 
