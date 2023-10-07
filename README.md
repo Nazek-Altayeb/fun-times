@@ -1,5 +1,6 @@
 # Goal
 Plan and develop school interactive page where pupils and teachers share their individual summer activities. 
+
 [Click this link to view the Website.](https://school-fun-times-1ec741f7cadd.herokuapp.com/)
 
 # User Experience
