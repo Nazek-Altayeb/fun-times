@@ -103,6 +103,11 @@ const ProfileEditForm = () => {
                     rows={7}
                 />
             </Form.Group>
+            {errors?.content?.map((message, idx) => (
+                <Alert variant="warning" key={idx}>
+                    {message}
+                </Alert>
+            ))}
             <Form.Group>
                 <Form.Label>Visited city </Form.Label>
                 <Form.Control
@@ -113,6 +118,11 @@ const ProfileEditForm = () => {
                     rows={1}
                 />
             </Form.Group>
+            {errors?.visited_city?.map((message, idx) => (
+                <Alert variant="warning" key={idx}>
+                    {message}
+                </Alert>
+            ))}
             <Form.Group>
                 <Form.Label>Favourite hobby </Form.Label>
                 <Form.Control
@@ -123,6 +133,11 @@ const ProfileEditForm = () => {
                     rows={1}
                 />
             </Form.Group>
+            {errors?.favourite_hobby?.map((message, idx) => (
+                <Alert variant="warning" key={idx}>
+                    {message}
+                </Alert>
+            ))}
             <Form.Group>
                 <Form.Label>Activity </Form.Label>
                 <Form.Control
@@ -133,6 +148,11 @@ const ProfileEditForm = () => {
                     rows={1}
                 />
             </Form.Group>
+            {errors?.activity?.map((message, idx) => (
+                <Alert variant="warning" key={idx}>
+                    {message}
+                </Alert>
+            ))}
             <Form.Group>
                 <Form.Label>Age </Form.Label>
                 <Form.Control
@@ -143,7 +163,7 @@ const ProfileEditForm = () => {
                     rows={1}
                 />
             </Form.Group>
-            {errors?.content?.map((message, idx) => (
+            {errors?.age?.map((message, idx) => (
                 <Alert variant="warning" key={idx}>
                     {message}
                 </Alert>
