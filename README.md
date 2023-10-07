@@ -264,7 +264,7 @@ Sign up, Sign in and About page images are from [Google Images](https://images.g
 - References have been added to the code where i bring code from different external resources.
 
 **Documentation**
-- At some part of the Readme.md and ManualTest.md, i follow the design of the following [Readme.md](https://github.com/SandraBergstrom/travel-tickr/tree/main) 
+- At some parts of the Readme.md and ManualTest.md, i follow the design of the following [Readme.md](https://github.com/SandraBergstrom/travel-tickr/tree/main) 
 # **Aknowledgement**
 - I programmed the project with the help of the open resource code os the Code Institute LMS, and i extended it the way that serve my idea.
 - Many thanks to Mentor **Antonio Rodriguez** for continuous helpful feedback.
