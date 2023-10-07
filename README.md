@@ -173,6 +173,7 @@ I have followed the iterative approach, each sprint last for 5 days.
     - [x] [Bug fix: Navbar overlap in small devices](https://github.com/Nazek-Altayeb/fun-times/issues/18) <code style="color:red">(Must have)</code>
     - [x] [Documentation: Add features details](#features) <code style="color:#5319E7">(Should have)</code>
 - **Sprinit 9 (Oct 1st To 5th, 2023)**
+   - [x] [User story: Bookmark post](https://github.com/Nazek-Altayeb/fun-times/issues/21) <code style="color:#5319E7">(Should have)</code>
    - [x] [Clean Code](https://github.com/Nazek-Altayeb/fun-times/issues/19) <code style="color:#5319E7">(Should have)</code>
    - [x] [Add references](https://github.com/Nazek-Altayeb/fun-times/issues/20) <code style="color:#5319E7">(Should have)</code>
    - [x] [Documentation: Add MANAULTEST.md](MANUALTEST.md) <code style="color:#5319E7">(Should have)</code>
@@ -264,7 +265,7 @@ Sign up, Sign in and About page images are from [Google Images](https://images.g
 - References have been added to the code where i bring code from different external resources.
 
 **Documentation**
-- At some parts of the Readme.md and ManualTest.md, i follow the design of the following [Readme.md](https://github.com/SandraBergstrom/travel-tickr/tree/main) 
+ At some parts of the Readme.md and ManualTest.md, i follow the design of the following [Readme.md](https://github.com/SandraBergstrom/travel-tickr/tree/main) 
 # **Aknowledgement**
 - I programmed the project with the help of the open resource code os the Code Institute LMS, and i extended it the way that serve my idea.
 - Many thanks to Mentor **Antonio Rodriguez** for continuous helpful feedback.
